@@ -1,25 +1,15 @@
 <script>
 
-let dia = prompt("digite um numero da semana")
+    let numero = parseInt(prompt("digite um numero"));
 
-if ( dia == 1 ){
-    document.write("domingo, dia de ir a igreja!");
-}else if( dia == 2 ){
-    document.write("segunda, dia de acordar cedo");
-}else if( dia == 3){
-    document.write("terca, dia de lavar roupa");
-}else if( dia == 4){
-    document.write("quarta, dia de usar rosa");
-}else if( dia == 5 ){
-    document.write("quinta, dia de TWD")
-}else if( dia == 6 ){
-    document.write("sexta, dia de torrar salario")
-}else if( dia == 7){
-    document.write("dia de descancar")
-}else {
-    Document.write("nao identificado")
-}
+    if( numero < 0 ){
+        document.write("esse numero e negativo");
+    }
+    else if( numero > 0){
+        document.write("esse número e positivo ");
 
-
+    } else {
+        document.write("numero neutro");
+    }
 
 </script>
